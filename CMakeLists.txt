@@ -7,6 +7,7 @@ project(planning
 )
 
 set(CMAKE_CXX_STANDARD 17)
+enable_testing()
 
 #变量设置
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
@@ -29,4 +30,5 @@ endif()
 
 #添加子目录 子目录中的CMakeLists.txt也是会用到父目录中的变量的
 add_subdirectory(src)
+add_subdirectory(test/map_test)
 
